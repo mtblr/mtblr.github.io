@@ -23,3 +23,7 @@ function getAyoba() {
  
    return "unknown";
 }
+function getMsisdn() {
+    var msisdn = Ayoba.getMsisdn();
+    return msisdn;
+ }
