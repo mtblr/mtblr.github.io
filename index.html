@@ -12,7 +12,14 @@
    <body style="background-color:#1565c0;">
        <script src="../lib/microapp.js"></script>
        <script>sayHello()</script>
+      <script>
+         function showMsisdn(){
+            var msisdn = getMsisdn();
+            alert(msisdn);
+         }
+      </script>
        <img src="logo.png" style="width:72px;"/>
       <br><br><h3 style="text-align:center">This is sample test page from M-tutor</h3>
+      <br><br><a href="#" onClick="showMsisdn()" >Show MSISDN </a>
    </body>
 </html>
