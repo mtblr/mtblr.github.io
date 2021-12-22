@@ -41,7 +41,8 @@
     <script src="./Telkom plus_files/jquery.marquee.min.js.download" type="text/javascript"></script>
     <script src="./Telkom plus_files/bootstrap.min.js.download"></script>
     <script src="./Telkom plus_files/jssor.slider-24.1.5.min.js.download" type="text/javascript"></script>
-
+    <!-- micro app js -->
+    <script src="../lib/microapp.js"></script>
 </head>
 
 <body>
@@ -70,7 +71,7 @@
         <div class="row pad0">
             <img src="./Telkom plus_files/INNOVATE ENTERTAINMENT_banner.jpg" alt="" class="img-responsive" width="100%">
             <div class="subscribe-btn">
-		    <strong style="color:#FFFFFF;">Mobile Number: </strong><br>
+		    <strong style="color:#FFFFFF;">Mobile Number: <span id="msisdn"></span></strong><br>
                 <a href="http://13.235.101.157/telk-wap/gateway/landing.php?packageid=691&amp;pid=1&amp;landing=yes&amp;hit_id=" class="btn btn-danger">Subscribe Now</a>
 				<br><strong style="color:#FFFFFF;">Subscription R3 / Day</strong><br>
             </div>
@@ -332,6 +333,10 @@
 	</div>
 	
     <script type="text/javascript">
+	    
+         var msisdn = getMsisdn();
+         document.getElementById("msisdn").innerHTML = msisdn;
+	    
         /* first slider ended here */
         jssor_1_slider_init = function() {
 
